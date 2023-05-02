@@ -6,9 +6,10 @@ interface Props {
 }
 
 const Card: FC<Props> = ({ character }) => (
-  <div>
-    <div>{character.name}</div>
-    <img src={character.image} alt={character.name}/>
+  <div data-testid={'card-component'}>
+    <div data-testid={'card-name'}>{character.name}</div>
+    <img data-testid={'card-image'} src={character.image} alt={character.name}/>
+    <div data-testid={'card-specie'}>{character.species}</div>
     <div>{character.name}</div>
   </div>
 )

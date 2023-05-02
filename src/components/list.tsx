@@ -7,7 +7,7 @@ interface Props {
 }
 
 const List: FC<Props> = ({characters}) => (
-  <div>
+  <div data-testid={'list-component'}>
     {characters.map((character) => (
       <div key={character.id} >
         <Card character={character} />
